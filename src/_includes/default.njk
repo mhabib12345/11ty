@@ -1,20 +1,147 @@
+---
+permalink: /
+eleventyExcludeFromCollections: true
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <title>My Cool Eleventy Site</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            color: #fff;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero .cta {
+            background: #ff6f61;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+
+        .hero .cta:hover {
+            background: #e65a50;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>{{ title }}</h1>
+        <h1>My Cool Eleventy Site</h1>
     </header>
-    <main>
-        {{ content }}
-    </main>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Welcome to My Cool Site</h2>
+        <p>Your go-to place for awesome content and inspiration.</p>
+        <a href="/about" class="cta">Learn More</a>
+    </section>
+
+    <section class="content">
+        <h3>Featured Content</h3>
+        <p>This is a simple one-file Eleventy website with a clean and modern layout. You can easily expand it by adding more sections or pages.</p>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Your Name</p>
+        <p>&copy; 2023 My Cool Eleventy Site. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Simple JavaScript for interactivity (optional)
+        document.querySelector('.cta').addEventListener('click', () => {
+            alert('Thanks for visiting!');
+        });
+    </script>
 </body>
 </html>
